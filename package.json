@@ -1,0 +1,33 @@
+{
+  "name": "ecomerce_api",
+  "version": "1.0.0",
+  "description": "1. npm init -y\r 2. npm install express sequelize pg pg-hstore cors dotenv\r 3. npm install nodemon morgan -D\r 4. /src\r    -- /services\r    -- /models\r    -- /controllers\r    -- /routes\r    -- /middlewares\r    -- /seeders\r    -- /utils\r    -- /tests\r    -- /templates\r    -- app.js\r    -- server.js\r 5. scripts\r 6. create a server\r 7. configure the conexion to the database\r 8. authenticate the database into app.js\r 9. create a user model\r 10. init models\r 11. sync the database\r 12. register users\r     -> encript password\r     -> bycript\r 13. authentication with the login",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.js",
+    "seed": "node ./src/seeders/seed.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "auto": "^10.37.6",
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mailer": "^0.6.7",
+    "node": "^18.13.0",
+    "nodemailer": "^6.9.1",
+    "pg": "^8.9.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.28.0",
+    "sequelize-auto": "^0.8.8"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20"
+  }
+}
